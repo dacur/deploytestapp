@@ -1,9 +1,9 @@
 # Change these
-server '45.55.74.223', port: 80, roles: [:web, :app, :db], primary: true
+server '45.55.74.223', roles: [:web, :app, :db], primary: true
 
 set :repo_url,        'git@github.com:dacur/deploytestapp.git'
 set :application,     'deploytestapp'
-set :user,            'deploy'
+set :user,            'root'
 set :puma_threads,    [4, 16]
 set :puma_workers,    0
 
